@@ -1,0 +1,17 @@
+<!-- TODO: disable select. -->
+<div class="container-fluid row">
+  <h1>Color Picker</h1>
+  <!-- <canvas width="600" height="400" id="cv" style="border: 1px solid red"></canvas> -->
+  <div class="col-xs-6 no-select">
+    <canvas class="no-select" id="cv" style="width: 100%"></canvas>
+  </div>
+  <div class="col-xs-6" ng-style="{'background-color':color}">
+    <hr />
+    <pre>Selected: {{ color }}</pre>
+    <pre>Selected: {{ hex }}</pre>
+    <hr />
+    <h3>Instructions</h3>
+    <p>Left click to stop live updating and update color.</p>
+    <p>Right click to start and stop live updating of color.</p>
+  </div>
+</div>
